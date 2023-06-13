@@ -24,4 +24,4 @@ This is a simple implementation for an MQTT broker in Typescript. Feel free to c
     yarn dev
 ```
 
-- You can test out the code by using this [tool](http://mqtt-explorer.com) if you like.
+- You can test out the code by using this [tool](http://mqtt-explorer.com) or any other mqtt client.
