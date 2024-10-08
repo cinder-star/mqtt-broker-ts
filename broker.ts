@@ -4,7 +4,7 @@ import * as WebSocket from "ws";
 import dotenv from "dotenv";
 
 dotenv.config();
-const port = process.env.PORT || 8080;
+const port = Number.parseInt(process.env.PORT || "8080");
 
 const httpServer = Http.createServer();
 const aedes = createBroker();
@@ -19,7 +19,7 @@ wss.on("connection", (ws) => {
 });
 
 // Start thhe http server
-httpServer.listen(port, () => {
+httpServer.listen(port, "0.0.0.0", () => {
   console.log("System: Server started on port:", port);
 });
 
